@@ -1,0 +1,11 @@
+//
+//  Copyright © 2018 Itty Bitty Apps Pty Ltd. All rights reserved.
+//
+
+#include "../../Support/Configuration/Workspace-Universal-Target-Base.xcconfig"
+
+PUBLIC_HEADERS_FOLDER_PATH = $(PRODUCT_NAME)
+
+// Modules
+DEFINES_MODULE = YES
+MODULEMAP_FILE = $(SRCROOT)/Core/Core.modulemap

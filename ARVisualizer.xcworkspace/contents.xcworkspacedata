@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ClientCore/ClientCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DesktopClient/DesktopClient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MobileClient/MobileClient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Server/Server.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Support">
+   </FileRef>
+</Workspace>

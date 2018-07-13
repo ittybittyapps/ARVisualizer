@@ -1,0 +1,31 @@
+# Xcode
+build/
+.idea/
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
+*.xcuserdatad
+*.xcscmblueprint
+*.trace
+*project.xcworkspace/
+*~.nib
+*.xccheckout
+
+# OSX
+.DS_Store
+
+# Git
+*.orig
+*.BACKUP.*
+*.REMOTE.*
+*.LOCAL.*
+*.BASE.*
+*.bak
+
+# dotenv
+.env
+
+# Bundler
+Vendor/bundle
