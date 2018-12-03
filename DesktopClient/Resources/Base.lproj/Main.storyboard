@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
         <plugIn identifier="com.apple.SceneKitIBPlugin" version="14460.31"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -416,16 +417,16 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="67" y="-44"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="AR Client" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="463" height="235"/>
+                        <rect key="contentRect" x="196" y="240" width="320" height="240"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -444,15 +445,15 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="DesktopClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" appearanceType="darkAqua" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="486" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <sceneView translatesAutoresizingMaskIntoConstraints="NO" id="DJn-5j-WKK">
-                                <rect key="frame" x="0.0" y="0.0" width="486" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <color key="backgroundColor" red="0.11764705882352941" green="0.12941176470588234" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                             </sceneView>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OdB-rM-OSn">
-                                <rect key="frame" x="20" y="58" width="163" height="192"/>
+                                <rect key="frame" x="20" y="556" width="163" height="192"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1VC-bw-AwE">
                                         <rect key="frame" x="-2" y="175" width="72" height="17"/>
@@ -541,14 +542,14 @@
                                 </customSpacing>
                             </stackView>
                             <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="qhg-iU-HI5">
-                                <rect key="frame" x="225" y="175" width="241" height="75"/>
+                                <rect key="frame" x="763" y="673" width="241" height="75"/>
                                 <rows>
                                     <gridRow id="IWb-SC-sx4"/>
                                     <gridRow id="7Hh-WB-brR" userLabel="Point cloud"/>
                                     <gridRow id="DiX-oc-SXL" userLabel="Planes"/>
                                 </rows>
                                 <columns>
-                                    <gridColumn id="8Yn-Wa-zxe" userLabel="Label"/>
+                                    <gridColumn xPlacement="trailing" id="8Yn-Wa-zxe" userLabel="Label"/>
                                     <gridColumn id="aAx-db-84y" userLabel="Control"/>
                                 </columns>
                                 <gridCells>
@@ -580,7 +581,7 @@
                                     </gridCell>
                                     <gridCell row="7Hh-WB-brR" column="8Yn-Wa-zxe" id="08N-zs-EfD">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pPB-wa-Irj">
-                                            <rect key="frame" x="-2" y="30" width="72" height="17"/>
+                                            <rect key="frame" x="15" y="30" width="72" height="17"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Point cloud" id="nan-oB-btu">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -606,7 +607,7 @@
                                     </gridCell>
                                     <gridCell row="DiX-oc-SXL" column="8Yn-Wa-zxe" id="22J-hB-kAa">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="p4D-xC-kN2">
-                                            <rect key="frame" x="-2" y="3" width="45" height="17"/>
+                                            <rect key="frame" x="42" y="3" width="45" height="17"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Planes" id="0Qi-QN-698">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -662,7 +663,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="66" y="877"/>
         </scene>
     </scenes>
 </document>
