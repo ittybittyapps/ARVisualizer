@@ -23,6 +23,8 @@ final class ViewController: NSViewController, SessionControllerDelegate {
     @IBOutlet var pointCloudPopUpButton: NSPopUpButton!
     @IBOutlet var planeAnchorsPopUpButton: NSPopUpButton!
 
+    @IBOutlet var connectivityLabel: NSTextField!
+
     private let sceneController = SceneController()
     private var sessionController: SessionController!
 
@@ -45,8 +47,6 @@ final class ViewController: NSViewController, SessionControllerDelegate {
         self.sceneView.scene = self.sceneController.scene
         self.sceneView.delegate = self.sceneController
         self.sceneController.cameraController.sceneCameraController = self.sceneView
-
-        self.sceneView.showsStatistics = true
     }
 
     // MARK: - Actions
@@ -64,6 +64,10 @@ final class ViewController: NSViewController, SessionControllerDelegate {
     }
 
     // MARK: - SessionControllerDelegate
+
+    func sessionControllerDidUpdateConnectivity(_ sessionController: SessionController) {
+        self.connectivityLabel.isHidden = sessionController.isConnected
+    }
 
     func sessionController(_ sessionController: SessionController, didUpdate stats: SessionController.Stats) {
         self.timestampLabel.stringValue = stats.lastFrameTimestampText

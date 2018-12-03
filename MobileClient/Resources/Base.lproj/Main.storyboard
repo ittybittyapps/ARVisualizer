@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -120,12 +120,21 @@
                                 </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Waiting for a server…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCc-CO-gNI">
+                                <rect key="frame" x="427.5" y="731.5" width="169" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1176470588" green="0.12941176469999999" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="QAL-0J-erK" secondAttribute="trailing" id="1TT-ba-MAY"/>
                             <constraint firstItem="3se-qz-xqx" firstAttribute="top" secondItem="if0-Wu-oue" secondAttribute="top" id="6mb-y4-hl9"/>
+                            <constraint firstItem="oCc-CO-gNI" firstAttribute="centerX" secondItem="if0-Wu-oue" secondAttribute="centerXWithinMargins" id="7xk-1N-52q"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="oCc-CO-gNI" secondAttribute="bottom" constant="16" id="KLf-k1-qOl"/>
                             <constraint firstAttribute="bottom" secondItem="3se-qz-xqx" secondAttribute="bottom" id="Odg-Ub-Ufb"/>
+                            <constraint firstItem="oCc-CO-gNI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="if0-Wu-oue" secondAttribute="leadingMargin" id="XWm-tL-Icn"/>
                             <constraint firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailing" id="gds-Wv-oA5"/>
                             <constraint firstItem="d2M-uZ-BEc" firstAttribute="leading" secondItem="if0-Wu-oue" secondAttribute="leadingMargin" id="kvl-2U-rbd"/>
                             <constraint firstItem="QAL-0J-erK" firstAttribute="top" secondItem="d2M-uZ-BEc" secondAttribute="top" id="usr-ed-Hlm"/>
@@ -138,6 +147,7 @@
                         <outlet property="ambientColorTemperatureLabel" destination="ZHS-hi-cfO" id="Uvk-ft-20t"/>
                         <outlet property="ambientIntensityLabel" destination="nNX-Wc-gQw" id="zjo-CL-0EX"/>
                         <outlet property="anchorsCountLabel" destination="IFh-FW-p1x" id="EOq-Le-fbZ"/>
+                        <outlet property="connectivityLabel" destination="oCc-CO-gNI" id="AVB-kz-18s"/>
                         <outlet property="latencyLabel" destination="1wG-zm-tar" id="yIE-Pe-W7Z"/>
                         <outlet property="pointsCountLabel" destination="H0Z-hL-ZRj" id="6KJ-vo-nsd"/>
                         <outlet property="sceneView" destination="3se-qz-xqx" id="6U7-mM-VUj"/>

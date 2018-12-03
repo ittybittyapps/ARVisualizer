@@ -18,8 +18,6 @@ final class ViewController: UIViewController, ARSCNViewDelegate, SessionServerDe
 
         self.sceneView.session.delegate = self.processor
 
-        // Show statistics such as fps and timing information
-        self.sceneView.showsStatistics = true
         self.sceneView.debugOptions = [ ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints ]
     }
 

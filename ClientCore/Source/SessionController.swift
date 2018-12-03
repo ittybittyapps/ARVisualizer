@@ -6,6 +6,7 @@ import Core
 import Foundation
 
 public protocol SessionControllerDelegate: class {
+    func sessionControllerDidUpdateConnectivity(_ sessionController: SessionController)
     func sessionController(_ sessionController: SessionController, didUpdate stats: SessionController.Stats)
 }
 
@@ -27,6 +28,7 @@ public final class SessionController: NSObject, SessionClientDelegate {
 
     public let sceneController: SceneController
 
+    public private(set) var isConnected = false
     public private(set) var stats = Stats()
 
     public weak var delegate: SessionControllerDelegate?
@@ -42,9 +44,17 @@ public final class SessionController: NSObject, SessionClientDelegate {
     // MARK: - SessionClientDelegate
 
     func sessionClientDidConnectToServer(_ client: SessionClient) {
+        DispatchQueue.main.async {
+            self.isConnected = true
+            self.delegate?.sessionControllerDidUpdateConnectivity(self)
+        }
     }
 
     func sessionClientDidDisconnectFromServer(_ client: SessionClient) {
+        DispatchQueue.main.async {
+            self.isConnected = false
+            self.delegate?.sessionControllerDidUpdateConnectivity(self)
+        }
     }
 
     func sessionClient(_ client: SessionClient, didReceive message: ServerMessage) {

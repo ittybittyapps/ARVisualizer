@@ -21,6 +21,8 @@ final class ViewController: UIViewController, SessionControllerDelegate {
 
     @IBOutlet var settingsVisualEffectView: UIVisualEffectView!
 
+    @IBOutlet var connectivityLabel: UILabel!
+
     private let sceneController = SceneController()
     private var sessionController: SessionController!
 
@@ -33,8 +35,6 @@ final class ViewController: UIViewController, SessionControllerDelegate {
         self.sceneView.scene = self.sceneController.scene
         self.sceneView.delegate = self.sceneController
         self.sceneController.cameraController.sceneCameraController = self.sceneView
-
-        self.sceneView.showsStatistics = true
 
         self.settingsVisualEffectView.layer.cornerRadius = 13
     }
@@ -53,6 +53,10 @@ final class ViewController: UIViewController, SessionControllerDelegate {
     }
 
     // MARK: - SessionControllerDelegate
+
+    func sessionControllerDidUpdateConnectivity(_ sessionController: SessionController) {
+        self.connectivityLabel.isHidden = sessionController.isConnected
+    }
 
     func sessionController(_ sessionController: SessionController, didUpdate stats: SessionController.Stats) {
         self.timestampLabel.text = stats.lastFrameTimestampText
