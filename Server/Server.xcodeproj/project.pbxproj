@@ -71,9 +71,10 @@
 		7D1878F220DE1FBE008810FC = {
 			isa = PBXGroup;
 			children = (
-				7D1878FC20DE1FBE008810FC /* Products */,
-				7D1878FD20DE1FBE008810FC /* Server */,
 				7D20185E211446A4000D319B /* Frameworks */,
+				7D1878FC20DE1FBE008810FC /* Products */,
+				7DFB257D21B4E8EC00FFFB9D /* Resources */,
+				7D1878FD20DE1FBE008810FC /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,22 +86,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D1878FD20DE1FBE008810FC /* Server */ = {
+		7D1878FD20DE1FBE008810FC /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				7D1878FE20DE1FBE008810FC /* AppDelegate.swift */,
-				7D18790720DE1FBF008810FC /* Assets.xcassets */,
 				7DD9A0DE2114042A000B30EC /* AtomicValue.swift */,
 				7D18790C20DE1FBF008810FC /* Info.plist */,
-				7D18790920DE1FBF008810FC /* LaunchScreen.storyboard */,
-				7D18790420DE1FBE008810FC /* Main.storyboard */,
 				7D2D73B320F877CD003883B8 /* Messaging Support */,
 				7D1FC1C020EF105F0015C236 /* Model Support */,
 				7D51F3D320E629A000C5B07A /* Server-Bridging-Header.h */,
 				7D51F3C420E5C91800C5B07A /* SessionServer.swift */,
 				7D18790220DE1FBE008810FC /* ViewController.swift */,
 			);
-			path = Server;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		7D1FC1C020EF105F0015C236 /* Model Support */ = {
@@ -140,6 +138,16 @@
 				7D2D73B520F877EA003883B8 /* IBAServerMessage+Constructors.m */,
 			);
 			name = "Messaging Support";
+			sourceTree = "<group>";
+		};
+		7DFB257D21B4E8EC00FFFB9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D18790720DE1FBF008810FC /* Assets.xcassets */,
+				7D18790920DE1FBF008810FC /* LaunchScreen.storyboard */,
+				7D18790420DE1FBE008810FC /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,14 +391,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBY3G4JPGC;
-				INFOPLIST_FILE = "$(SRCROOT)/Server/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ittybittyapps.ARVisualizer.Server;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Server/Server-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/Server-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,14 +413,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBY3G4JPGC;
-				INFOPLIST_FILE = "$(SRCROOT)/Server/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ittybittyapps.ARVisualizer.Server;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Server/Server-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Source/Server-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "x86_64 arm64";

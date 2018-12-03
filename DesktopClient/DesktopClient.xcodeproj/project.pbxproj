@@ -55,9 +55,10 @@
 		7D18791220DE1FE0008810FC = {
 			isa = PBXGroup;
 			children = (
-				7D18791D20DE1FE0008810FC /* DesktopClient */,
 				7D20181321143E07000D319B /* Frameworks */,
 				7D18791C20DE1FE0008810FC /* Products */,
+				7DFB257B21B4E83C00FFFB9D /* Resources */,
+				7D18791D20DE1FE0008810FC /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,17 +70,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D18791D20DE1FE0008810FC /* DesktopClient */ = {
+		7D18791D20DE1FE0008810FC /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				7D18791E20DE1FE0008810FC /* AppDelegate.swift */,
-				7D18792220DE1FE0008810FC /* Assets.xcassets */,
 				7D18792820DE1FE0008810FC /* DesktopClient.entitlements */,
 				7D18792720DE1FE0008810FC /* Info.plist */,
-				7D18792420DE1FE0008810FC /* Main.storyboard */,
 				7D18792020DE1FE0008810FC /* ViewController.swift */,
 			);
-			path = DesktopClient;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		7D20181321143E07000D319B /* Frameworks */ = {
@@ -88,6 +87,15 @@
 				7D270B8F21B4C0C700CE3DF7 /* ClientCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DFB257B21B4E83C00FFFB9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D18792220DE1FE0008810FC /* Assets.xcassets */,
+				7D18792420DE1FE0008810FC /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,11 +323,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = DesktopClient/DesktopClient.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Source/DesktopClient.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KBY3G4JPGC;
-				INFOPLIST_FILE = "$(SRCROOT)/DesktopClient/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -336,11 +344,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = DesktopClient/DesktopClient.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Source/DesktopClient.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KBY3G4JPGC;
-				INFOPLIST_FILE = "$(SRCROOT)/DesktopClient/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

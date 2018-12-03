@@ -129,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				7D51F3A520E5C09F00C5B07A /* Configuration */,
-				7D45E0E420E5BCDF007F60CC /* Core */,
 				7D45E0E320E5BCDF007F60CC /* Products */,
+				7D45E0E420E5BCDF007F60CC /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,7 +142,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D45E0E420E5BCDF007F60CC /* Core */ = {
+		7D45E0E420E5BCDF007F60CC /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				7D45E0E520E5BCDF007F60CC /* Core.h */,
@@ -153,7 +153,7 @@
 				7D1FC1AC20EEFA730015C236 /* Model */,
 				7D1FC1AE20EEFA7A0015C236 /* Utilities */,
 			);
-			path = Core;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		7D51F3A520E5C09F00C5B07A /* Configuration */ = {
@@ -250,7 +250,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Core/Core.modulemap",
+				"$(SRCROOT)/Source/Core.modulemap",
 			);
 			name = "Package Module Map";
 			outputFileListPaths = (
