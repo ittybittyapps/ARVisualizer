@@ -23,6 +23,7 @@
 		7D89A18420F9FF9100F95F75 /* IBAARPlaneGeometry+ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D89A18320F9FF9100F95F75 /* IBAARPlaneGeometry+ARKit.m */; };
 		7DD9A0DF2114042A000B30EC /* AtomicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD9A0DE2114042A000B30EC /* AtomicValue.swift */; };
 		7DE2768020EF322900FFBF9B /* ARKit+IBAHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE2767F20EF322900FFBF9B /* ARKit+IBAHelpers.m */; };
+		7DFB257F21B4ED8900FFFB9D /* SessionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFB257E21B4ED8900FFFB9D /* SessionProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		7DD9A0DE2114042A000B30EC /* AtomicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicValue.swift; sourceTree = "<group>"; };
 		7DE2767E20EF322900FFBF9B /* ARKit+IBAHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARKit+IBAHelpers.h"; sourceTree = "<group>"; };
 		7DE2767F20EF322900FFBF9B /* ARKit+IBAHelpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ARKit+IBAHelpers.m"; sourceTree = "<group>"; };
+		7DFB257E21B4ED8900FFFB9D /* SessionProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				7D2D73B320F877CD003883B8 /* Messaging Support */,
 				7D1FC1C020EF105F0015C236 /* Model Support */,
 				7D51F3D320E629A000C5B07A /* Server-Bridging-Header.h */,
+				7DFB257E21B4ED8900FFFB9D /* SessionProcessor.swift */,
 				7D51F3C420E5C91800C5B07A /* SessionServer.swift */,
 				7D18790220DE1FBE008810FC /* ViewController.swift */,
 			);
@@ -223,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DFB257F21B4ED8900FFFB9D /* SessionProcessor.swift in Sources */,
 				7D51F3D620E629A000C5B07A /* IBAARPointCloud+ARKit.m in Sources */,
 				7D18790320DE1FBE008810FC /* ViewController.swift in Sources */,
 				7D1FC1C620EF10880015C236 /* IBAARCamera+ARKit.m in Sources */,
