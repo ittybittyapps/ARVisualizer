@@ -43,10 +43,9 @@
         <!--Navigation Controller-->
         <scene sceneID="nlY-WQ-KtB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0wH-eX-H1O" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="0wH-eX-H1O" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Con-vj-cOv">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
