@@ -59,8 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				7D270B9821B4C10500CE3DF7 /* Frameworks */,
-				7D20186C2114476C000D319B /* MobileClient */,
 				7D20186B2114476C000D319B /* Products */,
+				7DFB257C21B4E89300FFFB9D /* Resources */,
+				7D20186C2114476C000D319B /* Source */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,18 +73,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D20186C2114476C000D319B /* MobileClient */ = {
+		7D20186C2114476C000D319B /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				7D20186D2114476C000D319B /* AppDelegate.swift */,
-				7D2018762114476D000D319B /* Assets.xcassets */,
 				7D20187B2114476D000D319B /* Info.plist */,
-				7D2018782114476D000D319B /* LaunchScreen.storyboard */,
-				7D2018732114476C000D319B /* Main.storyboard */,
 				7D20188D21144D17000D319B /* SettingsViewController.swift */,
 				7D2018712114476C000D319B /* ViewController.swift */,
 			);
-			path = MobileClient;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		7D270B9821B4C10500CE3DF7 /* Frameworks */ = {
@@ -92,6 +90,16 @@
 				7D270B9421B4C0FA00CE3DF7 /* ClientCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DFB257C21B4E89300FFFB9D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D2018762114476D000D319B /* Assets.xcassets */,
+				7D2018782114476D000D319B /* LaunchScreen.storyboard */,
+				7D2018732114476C000D319B /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBY3G4JPGC;
-				INFOPLIST_FILE = "$(SRCROOT)/MobileClient/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBY3G4JPGC;
-				INFOPLIST_FILE = "$(SRCROOT)/MobileClient/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
