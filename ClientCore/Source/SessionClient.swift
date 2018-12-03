@@ -2,8 +2,8 @@
 //  Copyright © 2018 Itty Bitty Apps Pty Ltd. All rights reserved.
 //
 
-import MultipeerConnectivity
 import Core
+import MultipeerConnectivity
 
 protocol SessionClientDelegate: class {
     func sessionClientDidConnectToServer(_ client: SessionClient)

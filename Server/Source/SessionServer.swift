@@ -2,8 +2,8 @@
 //  Copyright © 2018 Itty Bitty Apps Pty Ltd. All rights reserved.
 //
 
-import MultipeerConnectivity
 import Core
+import MultipeerConnectivity
 
 protocol SessionServerDelegate: AnyObject {
     func sessionServerDidUpdateConnectedPeers(_ sessionServer: SessionServer)
@@ -43,8 +43,12 @@ final class SessionServer: NSObject, MCSessionDelegate, MCNearbyServiceAdvertise
         guard self.remotePeers.isEmpty == false else {
             return
         }
-        
-        try! self.session.send(data, toPeers: self.remotePeers, with: reliably ? .reliable : .unreliable)
+
+        do {
+            try self.session.send(data, toPeers: self.remotePeers, with: reliably ? .reliable : .unreliable)
+        } catch {
+            assertionFailure("Data failed to send: \(error.localizedDescription)")
+        }
     }
 
     // MARK: - MCSessionDelegate
