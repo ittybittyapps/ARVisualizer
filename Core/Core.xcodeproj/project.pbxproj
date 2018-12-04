@@ -408,7 +408,6 @@
 			baseConfigurationReference = 7D51F3A620E5C09F00C5B07A /* Project-Shared.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KBY3G4JPGC;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -421,7 +420,6 @@
 			baseConfigurationReference = 7D51F3A620E5C09F00C5B07A /* Project-Shared.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KBY3G4JPGC;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
