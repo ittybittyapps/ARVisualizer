@@ -48,10 +48,6 @@ public final class CameraController {
         }
     }
 
-    func update() {
-        // Nothing here...
-    }
-
     // MARK: - Private
 
     private func updateCameraManagement() {

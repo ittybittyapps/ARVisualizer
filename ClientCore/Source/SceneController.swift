@@ -116,12 +116,6 @@ public final class SceneController: NSObject, SCNSceneRendererDelegate {
         }
     }
 
-    // MARK: - SCNSceneRendererDelegate
-
-    public func renderer(_ renderer: SCNSceneRenderer, didApplyConstraintsAtTime time: TimeInterval) {
-        self.cameraController.update()
-    }
-
     // MARK: - Private
 
     private enum Constants {
