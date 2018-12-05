@@ -21,6 +21,7 @@ final class ViewController: NSViewController, SessionControllerDelegate {
 
     @IBOutlet var cameraModePopUpButton: NSPopUpButton!
     @IBOutlet var pointCloudPopUpButton: NSPopUpButton!
+    @IBOutlet var pointColoringPopUpButton: NSPopUpButton!
     @IBOutlet var planeAnchorsPopUpButton: NSPopUpButton!
 
     @IBOutlet var connectivityLabel: NSTextField!
@@ -42,6 +43,7 @@ final class ViewController: NSViewController, SessionControllerDelegate {
 
         self.cameraModePopUpButton.configure(with: self.sceneController.cameraController.mode)
         self.pointCloudPopUpButton.configure(with: self.sceneController.pointCloudMode)
+        self.pointColoringPopUpButton.configure(with: self.sceneController.pointColoringMode)
         self.planeAnchorsPopUpButton.configure(with: self.sceneController.planeAnchorsMode)
 
         self.sceneView.scene = self.sceneController.scene
@@ -57,6 +59,10 @@ final class ViewController: NSViewController, SessionControllerDelegate {
 
     @IBAction func changePointCloudMode(_ sender: NSPopUpButton) {
         self.sceneController.pointCloudMode = sender.selectedEnumValue(defaultValue: .none)
+    }
+
+    @IBAction func changePointColoringMode(_ sender: NSPopUpButton) {
+        self.sceneController.pointColoringMode = sender.selectedEnumValue(defaultValue: .sampled)
     }
 
     @IBAction func changePlaneAnchorsMode(_ sender: NSPopUpButton) {

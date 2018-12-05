@@ -542,10 +542,11 @@
                                 </customSpacing>
                             </stackView>
                             <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="qhg-iU-HI5">
-                                <rect key="frame" x="848" y="673" width="241" height="75"/>
+                                <rect key="frame" x="848" y="646" width="241" height="102"/>
                                 <rows>
-                                    <gridRow id="IWb-SC-sx4"/>
+                                    <gridRow id="IWb-SC-sx4" userLabel="Camera mode"/>
                                     <gridRow id="7Hh-WB-brR" userLabel="Point cloud"/>
+                                    <gridRow id="2AD-mi-3RZ" userLabel="Point coloring"/>
                                     <gridRow id="DiX-oc-SXL" userLabel="Planes"/>
                                 </rows>
                                 <columns>
@@ -555,7 +556,7 @@
                                 <gridCells>
                                     <gridCell row="IWb-SC-sx4" column="8Yn-Wa-zxe" id="wNH-oc-9Hn">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="70x-M7-r3h">
-                                            <rect key="frame" x="-2" y="57" width="89" height="17"/>
+                                            <rect key="frame" x="-2" y="84" width="89" height="17"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Camera mode" id="mV9-vb-gWc">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -565,7 +566,7 @@
                                     </gridCell>
                                     <gridCell row="IWb-SC-sx4" column="aAx-db-84y" id="TVN-IK-fKT">
                                         <popUpButton key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4BI-hU-sef">
-                                            <rect key="frame" x="89" y="51" width="155" height="25"/>
+                                            <rect key="frame" x="89" y="78" width="155" height="25"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="3eO-7w-uZt"/>
                                             </constraints>
@@ -575,13 +576,13 @@
                                                 <menu key="menu" id="ash-VO-vv4"/>
                                             </popUpButtonCell>
                                             <connections>
-                                                <action selector="changeCameraMode:" target="XfG-lQ-9wD" id="bmU-QM-GAJ"/>
+                                                <action selector="changeCameraMode:" target="XfG-lQ-9wD" id="T5S-j8-ahr"/>
                                             </connections>
                                         </popUpButton>
                                     </gridCell>
                                     <gridCell row="7Hh-WB-brR" column="8Yn-Wa-zxe" id="08N-zs-EfD">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pPB-wa-Irj">
-                                            <rect key="frame" x="15" y="30" width="72" height="17"/>
+                                            <rect key="frame" x="15" y="57" width="72" height="17"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Point cloud" id="nan-oB-btu">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -591,7 +592,7 @@
                                     </gridCell>
                                     <gridCell row="7Hh-WB-brR" column="aAx-db-84y" id="xg4-lH-mYw">
                                         <popUpButton key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="A1Q-dJ-5x0">
-                                            <rect key="frame" x="89" y="24" width="155" height="25"/>
+                                            <rect key="frame" x="89" y="51" width="155" height="25"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="kI0-9m-MgU"/>
                                             </constraints>
@@ -601,7 +602,33 @@
                                                 <menu key="menu" id="KKa-iW-dcb"/>
                                             </popUpButtonCell>
                                             <connections>
-                                                <action selector="changePointCloudMode:" target="XfG-lQ-9wD" id="igx-tX-ece"/>
+                                                <action selector="changePointCloudMode:" target="XfG-lQ-9wD" id="EKq-Kv-lhR"/>
+                                            </connections>
+                                        </popUpButton>
+                                    </gridCell>
+                                    <gridCell row="2AD-mi-3RZ" column="8Yn-Wa-zxe" id="5NO-77-j1y">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qzz-hW-Fzi">
+                                            <rect key="frame" x="-1" y="30" width="88" height="17"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Point coloring" id="NT9-Uy-0AR">
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="2AD-mi-3RZ" column="aAx-db-84y" id="inl-Yx-BDQ">
+                                        <popUpButton key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CXj-Fp-VJu">
+                                            <rect key="frame" x="89" y="24" width="155" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="ANa-bd-A92"/>
+                                            </constraints>
+                                            <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="ZcI-xT-2JS">
+                                                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="menu"/>
+                                                <menu key="menu" id="lD6-rK-iYM"/>
+                                            </popUpButtonCell>
+                                            <connections>
+                                                <action selector="changePointColoringMode:" target="XfG-lQ-9wD" id="5uV-3U-dXZ"/>
                                             </connections>
                                         </popUpButton>
                                     </gridCell>
@@ -666,6 +693,7 @@
                         <outlet property="latencyLabel" destination="FBC-xt-SNz" id="jV1-ea-y62"/>
                         <outlet property="planeAnchorsPopUpButton" destination="4xt-wP-vBM" id="DJm-7W-o2a"/>
                         <outlet property="pointCloudPopUpButton" destination="A1Q-dJ-5x0" id="FV0-XE-qY8"/>
+                        <outlet property="pointColoringPopUpButton" destination="CXj-Fp-VJu" id="C6p-Bu-mA0"/>
                         <outlet property="pointsCountLabel" destination="k75-5q-kjc" id="ZUN-R6-fBc"/>
                         <outlet property="sceneView" destination="DJn-5j-WKK" id="xJg-Zh-MOy"/>
                         <outlet property="timestampLabel" destination="1VC-bw-AwE" id="clz-7h-4zf"/>

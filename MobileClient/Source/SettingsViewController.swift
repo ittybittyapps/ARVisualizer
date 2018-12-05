@@ -9,6 +9,7 @@ final class SettingsViewController: UITableViewController {
 
     @IBOutlet var cameraModeLabel: UILabel!
     @IBOutlet var pointCloudModeLabel: UILabel!
+    @IBOutlet var pointColoringModeLabel: UILabel!
     @IBOutlet var planesModeLabel: UILabel!
 
     weak var sceneController: SceneController!
@@ -26,6 +27,11 @@ final class SettingsViewController: UITableViewController {
                              label: self.pointCloudModeLabel,
                              valueApplier: { [weak self] in
                                 self?.sceneController?.pointCloudMode = $0
+            }),
+            OptionController(value: self.sceneController.pointColoringMode,
+                             label: self.pointColoringModeLabel,
+                             valueApplier: { [weak self] in
+                                self?.sceneController?.pointColoringMode = $0
             }),
             OptionController(value: self.sceneController.planeAnchorsMode,
                              label: self.planesModeLabel,
