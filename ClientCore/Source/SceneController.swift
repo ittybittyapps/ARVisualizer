@@ -13,6 +13,11 @@ public final class SceneController: NSObject, SCNSceneRendererDelegate {
         case accumulated
     }
 
+    public enum PointColoringMode: Int, CaseIterable {
+        case sampled
+        case heightBased
+    }
+
     public enum PlaneAnchorsMode: Int, CaseIterable {
         case none
         case extents
@@ -25,6 +30,13 @@ public final class SceneController: NSObject, SCNSceneRendererDelegate {
     public var pointCloudMode = PointCloudMode.accumulated {
         didSet {
             self.updatePointCloudGeometry()
+        }
+    }
+
+    public var pointColoringMode = PointColoringMode.sampled {
+        didSet {
+            self.pointCloudNode.material.colorMode = self.pointColoringMode.materialMode
+            self.updateMeasurements()
         }
     }
 
@@ -186,6 +198,19 @@ extension SceneController.PointCloudMode: CustomStringConvertible {
 
 }
 
+extension SceneController.PointColoringMode: CustomStringConvertible {
+
+    public var description: String {
+        switch self {
+        case .sampled:
+            return NSLocalizedString("Sampled", comment: "Point coloring mode title")
+        case .heightBased:
+            return NSLocalizedString("Height-based", comment: "Point coloring mode title")
+        }
+    }
+
+}
+
 extension SceneController.PlaneAnchorsMode: CustomStringConvertible {
 
     public var description: String {
@@ -202,6 +227,19 @@ extension SceneController.PlaneAnchorsMode: CustomStringConvertible {
 }
 
 // MARK: - Private extensions
+
+private extension SceneController.PointColoringMode {
+
+    var materialMode: PointCloudMaterial.ColorMode {
+        switch self {
+        case .sampled:
+            return .sampled
+        case .heightBased:
+            return .heightBased
+        }
+    }
+
+}
 
 private extension SceneController.PlaneAnchorsMode {
 
