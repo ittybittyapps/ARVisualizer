@@ -2,10 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ClientCore/ClientCore.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Core/Core.xcodeproj">
+      location = "group:ARVisualizer">
    </FileRef>
    <FileRef
       location = "group:DesktopClient/DesktopClient.xcodeproj">

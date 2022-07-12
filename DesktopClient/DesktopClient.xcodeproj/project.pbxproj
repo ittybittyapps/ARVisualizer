@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,23 +11,8 @@
 		7D18792120DE1FE0008810FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D18792020DE1FE0008810FC /* ViewController.swift */; };
 		7D18792320DE1FE0008810FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D18792220DE1FE0008810FC /* Assets.xcassets */; };
 		7D18792620DE1FE0008810FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D18792420DE1FE0008810FC /* Main.storyboard */; };
-		7D270B9021B4C0C700CE3DF7 /* ClientCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D270B8F21B4C0C700CE3DF7 /* ClientCore.framework */; };
-		7D270B9121B4C0C700CE3DF7 /* ClientCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D270B8F21B4C0C700CE3DF7 /* ClientCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90A33377287CF5CC0060A740 /* ClientCore in Frameworks */ = {isa = PBXBuildFile; productRef = 90A33376287CF5CC0060A740 /* ClientCore */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7D270B9221B4C0C700CE3DF7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7D270B9121B4C0C700CE3DF7 /* ClientCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7D18791B20DE1FE0008810FC /* DesktopClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D270B9021B4C0C700CE3DF7 /* ClientCore.framework in Frameworks */,
+				90A33377287CF5CC0060A740 /* ClientCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,13 +93,15 @@
 				7D18791720DE1FE0008810FC /* Sources */,
 				7D18791820DE1FE0008810FC /* Frameworks */,
 				7D18791920DE1FE0008810FC /* Resources */,
-				7D270B9221B4C0C700CE3DF7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DesktopClient;
+			packageProductDependencies = (
+				90A33376287CF5CC0060A740 /* ClientCore */,
+			);
 			productName = RevealARClient;
 			productReference = 7D18791B20DE1FE0008810FC /* DesktopClient.app */;
 			productType = "com.apple.product-type.application";
@@ -142,7 +129,7 @@
 				};
 			};
 			buildConfigurationList = 7D18791620DE1FE0008810FC /* Build configuration list for PBXProject "DesktopClient" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -385,6 +372,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90A33376287CF5CC0060A740 /* ClientCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClientCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D18791320DE1FE0008810FC /* Project object */;
 }

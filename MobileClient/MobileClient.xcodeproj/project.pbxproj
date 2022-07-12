@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,23 +13,8 @@
 		7D2018772114476D000D319B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2018762114476D000D319B /* Assets.xcassets */; };
 		7D20187A2114476D000D319B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2018782114476D000D319B /* LaunchScreen.storyboard */; };
 		7D20188E21144D17000D319B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D20188D21144D17000D319B /* SettingsViewController.swift */; };
-		7D270B9521B4C0FA00CE3DF7 /* ClientCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D270B9421B4C0FA00CE3DF7 /* ClientCore.framework */; };
-		7D270B9621B4C0FA00CE3DF7 /* ClientCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D270B9421B4C0FA00CE3DF7 /* ClientCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90A33379287CF5D80060A740 /* ClientCore in Frameworks */ = {isa = PBXBuildFile; productRef = 90A33378287CF5D80060A740 /* ClientCore */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7D270B8E21B4C09A00CE3DF7 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7D270B9621B4C0FA00CE3DF7 /* ClientCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7D20186A2114476C000D319B /* MobileClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D270B9521B4C0FA00CE3DF7 /* ClientCore.framework in Frameworks */,
+				90A33379287CF5D80060A740 /* ClientCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,13 +97,15 @@
 				7D2018662114476C000D319B /* Sources */,
 				7D2018672114476C000D319B /* Frameworks */,
 				7D2018682114476C000D319B /* Resources */,
-				7D270B8E21B4C09A00CE3DF7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MobileClient;
+			packageProductDependencies = (
+				90A33378287CF5D80060A740 /* ClientCore */,
+			);
 			productName = RevealARMobileClient;
 			productReference = 7D20186A2114476C000D319B /* MobileClient.app */;
 			productType = "com.apple.product-type.application";
@@ -139,7 +126,7 @@
 				};
 			};
 			buildConfigurationList = 7D2018652114476C000D319B /* Build configuration list for PBXProject "MobileClient" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -323,7 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = KBY3G4JPGC;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,7 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = KBY3G4JPGC;
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +363,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90A33378287CF5D80060A740 /* ClientCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClientCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D2018622114476C000D319B /* Project object */;
 }

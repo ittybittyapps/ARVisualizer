@@ -1,8 +1,0 @@
-//
-//  Copyright © 2018 Itty Bitty Apps, Pty Ltd. All rights reserved.
-//
-
-module Core {
-    umbrella header "Core.h"
-    export *
-}

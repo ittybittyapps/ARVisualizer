@@ -2,7 +2,7 @@
 //  Copyright © 2018 Itty Bitty Apps Pty Ltd. All rights reserved.
 //
 
-import Core
+import CCore
 import MultipeerConnectivity
 
 protocol SessionServerDelegate: AnyObject {
