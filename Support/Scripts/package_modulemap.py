@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 
 #
 #  Copyright (c) 2018 Itty Bitty Apps Pty Ltd. All rights reserved.
