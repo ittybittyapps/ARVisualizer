@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Reflects ARTrackingState.
  */
-typedef NS_ENUM(NSInteger, IBAARTrackingState) {
+typedef NS_CLOSED_ENUM(NSInteger, IBAARTrackingState) {
     IBAARTrackingStateNotAvailable = 0,
     IBAARTrackingStateLimited,
     IBAARTrackingStateNormal,
@@ -20,7 +20,7 @@ typedef NS_ENUM(NSInteger, IBAARTrackingState) {
 /**
  Reflects ARTrackingStateReason.
  */
-typedef NS_ENUM(NSInteger, IBAARTrackingStateReason) {
+typedef NS_CLOSED_ENUM(NSInteger, IBAARTrackingStateReason) {
     IBAARTrackingStateReasonNone = 0,
     IBAARTrackingStateReasonInitializing,
     IBAARTrackingStateReasonExcessiveMotion,

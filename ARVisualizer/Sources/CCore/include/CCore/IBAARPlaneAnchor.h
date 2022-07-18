@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Reflects ARPlaneAnchorAlignment.
  */
-typedef NS_ENUM(NSInteger, IBAARPlaneAnchorAlignment) {
+typedef NS_CLOSED_ENUM(NSInteger, IBAARPlaneAnchorAlignment) {
     IBAARPlaneAnchorAlignmentHorizontal = 0,
     IBAARPlaneAnchorAlignmentVertical
 } NS_SWIFT_NAME(PlaneAnchor.Alignment);

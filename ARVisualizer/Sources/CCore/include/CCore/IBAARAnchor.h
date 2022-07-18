@@ -10,7 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Reflects anchor's tracking state as per ARTrackable, and whether it's supported.
  */
-typedef NS_ENUM(NSInteger, IBAARAnchorTrackingState) {
+typedef NS_CLOSED_ENUM(NSInteger, IBAARAnchorTrackingState) {
     IBAARAnchorTrackingStateNotSupported = 0,
     IBAARAnchorTrackingStateNotTracked,
     IBAARAnchorTrackingStateTracked,

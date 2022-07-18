@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Reflects ARWorldMappingStatus.
  */
-typedef NS_ENUM(NSInteger, IBAARWorldMappingStatus) {
+typedef NS_CLOSED_ENUM(NSInteger, IBAARWorldMappingStatus) {
     IBAARWorldMappingStatusNotAvailable = 0,
     IBAARWorldMappingStatusLimited,
     IBAARWorldMappingStatusExtending,

@@ -9,7 +9,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Represents the type of encoded server message.
  */
-typedef NS_ENUM(NSInteger, IBAServerMessageType) {
+typedef NS_CLOSED_ENUM(NSInteger, IBAServerMessageType) {
     /** Expected payload type is NSNull. */
     IBAServerMessageTypeInvalid = 0,
     /** Expected payload type is IBAARFrame. */
