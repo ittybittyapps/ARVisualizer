@@ -14,7 +14,6 @@
 		7D18790B20DE1FBF008810FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D18790920DE1FBF008810FC /* LaunchScreen.storyboard */; };
 		7D1FC1C320EF107B0015C236 /* IBAARFrame+ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FC1C220EF107B0015C236 /* IBAARFrame+ARKit.m */; };
 		7D1FC1C620EF10880015C236 /* IBAARCamera+ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FC1C520EF10880015C236 /* IBAARCamera+ARKit.m */; };
-		7D270B9A21B4C23A00CE3DF7 /* libCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D270B9921B4C23A00CE3DF7 /* libCore.a */; };
 		7D2D73B620F877EA003883B8 /* IBAServerMessage+Constructors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D73B520F877EA003883B8 /* IBAServerMessage+Constructors.m */; };
 		7D2D73BC20F8834B003883B8 /* IBAARAnchor+ARKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D73BB20F8834B003883B8 /* IBAARAnchor+ARKit.m */; };
 		7D51F3C520E5C91800C5B07A /* SessionServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D51F3C420E5C91800C5B07A /* SessionServer.swift */; };
@@ -38,8 +37,6 @@
 		7D1FC1C220EF107B0015C236 /* IBAARFrame+ARKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "IBAARFrame+ARKit.m"; sourceTree = "<group>"; };
 		7D1FC1C420EF10880015C236 /* IBAARCamera+ARKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBAARCamera+ARKit.h"; sourceTree = "<group>"; };
 		7D1FC1C520EF10880015C236 /* IBAARCamera+ARKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "IBAARCamera+ARKit.m"; sourceTree = "<group>"; };
-		7D20185F211446A4000D319B /* libRevealARCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libRevealARCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D270B9921B4C23A00CE3DF7 /* libCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2D73B420F877EA003883B8 /* IBAServerMessage+Constructors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBAServerMessage+Constructors.h"; sourceTree = "<group>"; };
 		7D2D73B520F877EA003883B8 /* IBAServerMessage+Constructors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "IBAServerMessage+Constructors.m"; sourceTree = "<group>"; };
 		7D2D73BA20F8834B003883B8 /* IBAARAnchor+ARKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IBAARAnchor+ARKit.h"; sourceTree = "<group>"; };
@@ -63,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D270B9A21B4C23A00CE3DF7 /* libCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +69,6 @@
 		7D1878F220DE1FBE008810FC = {
 			isa = PBXGroup;
 			children = (
-				7D20185E211446A4000D319B /* Frameworks */,
 				7D1878FC20DE1FBE008810FC /* Products */,
 				7DFB257D21B4E8EC00FFFB9D /* Resources */,
 				7D1878FD20DE1FBE008810FC /* Source */,
@@ -123,15 +118,6 @@
 				7D51F3D520E629A000C5B07A /* IBAARPointCloud+ARKit.m */,
 			);
 			name = "Model Support";
-			sourceTree = "<group>";
-		};
-		7D20185E211446A4000D319B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7D270B9921B4C23A00CE3DF7 /* libCore.a */,
-				7D20185F211446A4000D319B /* libRevealARCore.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7D2D73B320F877CD003883B8 /* Messaging Support */ = {

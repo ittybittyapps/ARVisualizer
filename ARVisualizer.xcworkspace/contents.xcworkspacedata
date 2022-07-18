@@ -13,7 +13,4 @@
    <FileRef
       location = "group:Server/Server.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Support">
-   </FileRef>
 </Workspace>
