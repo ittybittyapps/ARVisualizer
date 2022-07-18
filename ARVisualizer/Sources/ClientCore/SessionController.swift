@@ -5,7 +5,7 @@
 import CCore
 import Foundation
 
-public protocol SessionControllerDelegate: class {
+public protocol SessionControllerDelegate: AnyObject {
     func sessionControllerDidUpdateConnectivity(_ sessionController: SessionController)
     func sessionController(_ sessionController: SessionController, didUpdate stats: SessionController.Stats)
 }

@@ -116,7 +116,7 @@ public final class CameraController {
 
 // MARK: - Scene controllable protocol
 
-public protocol SceneCameraControllable: class {
+public protocol SceneCameraControllable: AnyObject {
     var allowsCameraControl: Bool { get set }
     var pointOfView: SCNNode? { get set }
     var defaultCameraController: SCNCameraController { get }

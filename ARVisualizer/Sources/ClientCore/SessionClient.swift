@@ -5,7 +5,7 @@
 import CCore
 import MultipeerConnectivity
 
-protocol SessionClientDelegate: class {
+protocol SessionClientDelegate: AnyObject {
     func sessionClientDidConnectToServer(_ client: SessionClient)
     func sessionClientDidDisconnectFromServer(_ client: SessionClient)
     func sessionClient(_ client: SessionClient, didReceive message: ServerMessage)
@@ -56,6 +56,8 @@ final class SessionClient: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDe
                     self.delegate?.sessionClientDidConnectToServer(self)
                 }
             }
+        @unknown default:
+            print("Unhandled session state for \(peerID.displayName): \(state)")
         }
     }
 
