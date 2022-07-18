@@ -17,7 +17,7 @@ Visualized information includes:
 
 ## How to build
 
-1. Clone the repository and open `ARVisualizer.xcworkspace` in Xcode 10 or newer.
+1. Clone the repository and open `ARVisualizer.xcworkspace` in Xcode 13 or newer.
 2. Configure automatic codesigning for `Server` and `MobileClient` projects/targets by opening their target settings, _General_ tab, and configuring the _Team_ setting in the _Signing_ section.
 3. Build and run `MobileClient` scheme on a supported iPad device _and/or_ `DesktopClient` scheme on the Mac.
 4. Build and run `Server` scheme on a supported iPhone or iPad device.
