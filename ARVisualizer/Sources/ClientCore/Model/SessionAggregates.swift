@@ -10,7 +10,7 @@ struct SessionModel {
     private(set) var anchors = [UUID: Anchor]()
 
     private(set) var floorPosition: Float = 0
-    private(set) var featurePointsBoundingBox = Box(size: simd_float3(1))
+    private(set) var featurePointsBoundingBox = Box(size: simd_float3(repeating: 1))
     private(set) var accumulatedPointCloud = AccumulatedPointCloud()
 
     mutating func update(with frame: Frame) {
